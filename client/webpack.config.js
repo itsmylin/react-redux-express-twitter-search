@@ -4,6 +4,12 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
+  entry: ["./src/index.js"],
+  output: {
+    publicPath: "/dist/",
+    path: path.join(__dirname, "dist"),
+    filename: "[chunkhash].bundle.js"
+  },
   module: {
     rules: [
       {
