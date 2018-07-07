@@ -18,34 +18,29 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case GET_RESULT_DATA:
-      return {
-        ...state,
+      return Object.assign({}, state, {
         tweets: action.payload,
         isSuccess: true
-      };
+      });
     case SEARCH_INITIATE:
-      return {
-        ...initialState,
+      return Object.assign({}, initialState, {
         query: action.payload,
         loading: true
-      };
+      });
     case SEARCH_LOADING:
-      return {
-        ...state,
+      return Object.assign({}, state, {
         loading: true
-      };
+      });
     case SORT_TWEET:
-      return {
-        ...state,
+      return Object.assign({}, state, {
         tweets: state.tweets.sort(sortMethods[action.payload]),
         sort: action.payload,
         loading: true
-      };
+      });
     case HIDE_SPINNER:
-      return {
-        ...state,
+      return Object.assign({}, state, {
         loading: false
-      };
+      });
     default:
       return state;
   }
