@@ -21,9 +21,11 @@ class TweetResult extends Component {
       content = <div className="reminder">Search tweets using hashtags</div>;
     }
     return (
-      <div className="result-container">
-        <SearchBar />
-        <div className="tweet-result">{content}</div>
+      <div className="container">
+        <div className="result-container">
+          <SearchBar />
+          <div className="tweet-result">{content}</div>
+        </div>
       </div>
     );
   }

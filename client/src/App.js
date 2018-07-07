@@ -18,9 +18,7 @@ class App extends Component {
           <div className="App">
             <Navbar />
             <Route exact path="/" component={Landing} />
-            <div className="container">
-              <Route exact path="/search" component={TweetResult} />
-            </div>
+            <Route exact path="/search" component={TweetResult} />
             <Footer />
           </div>
         </Router>
