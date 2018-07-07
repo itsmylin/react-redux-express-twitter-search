@@ -1,0 +1,8 @@
+export const GET_ERRORS = "GET_ERRORS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
+export const GET_RESULT_DATA = "GET_RESULT_DATA";
+export const SEARCH_INITIATE = "SEARCH_INITIATE";
+export const SEARCH_LOADING = "SEARCH_LOADING";
+export const SORT_TWEET = "SORT_TWEET";
+export const FINISH_SORT = "FINISH_SORT";
+export const HIDE_SPINNER = "HIDE_SPINNER";

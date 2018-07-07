@@ -1,0 +1,212 @@
+footer {
+  display: block;
+  background-color: #1DA1F2;
+  color: white;
+  height: 50px;
+  padding: 20px;
+}
+
+.app-navbar {
+  background-color: #1DA1F2;
+  color: white;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.app-navbar .title {
+  font-family: "Helvetica Neue";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto; 
+  line-height: 30px;
+  font-size: 30px;
+  margin: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border-radius: 18px;
+  background-color: #f5f8fa;
+  outline: none;
+  border: none;
+}
+
+input[type=text]:focus {
+  border: 1px #A4D9F9;
+  box-shadow: 0 0 0 1px rgba(29,161,242,0.7);
+}
+
+input[type=submit] {
+  background-color: #4AB3F4;
+  border: #1da1f2;
+  width: 100px;
+  height: 40px;
+  border-radius: 18px;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #1da1f2;
+}
+
+.landing {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 90px;
+  margin: 0 auto; 
+  height: 100vh;
+}
+
+.landing .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("./img/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .6;
+}
+
+.landing-form-group {
+  position: relative;
+  margin-top: 50px;
+  height: 300px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.submit-container {
+  margin-top: 10px;
+}
+
+.landing .h2 {
+  margin-top: 50px;
+}
+
+.landing-search-input {
+  padding: 5px;
+  height: 70px;
+}
+
+.landing-hashtag {
+  width: 30%;
+  min-width: 250px;
+  margin: 0 auto;
+}
+.landing-count {
+  width: 12%;
+  min-width: 130px;
+  margin: 0 auto;
+}
+
+.landing-search-form {
+  position: relative;
+  margin: 0 auto;
+}
+
+.landing-count.is-invalid,
+.landing-hashtag.is-invalid {
+  border: 2px red;
+}
+
+.invalid-feedback {
+  color: red;
+}
+/* SearchResult */
+.search-form-group {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  padding: 5px;
+  margin: 0 auto;
+  width: 75%;
+  min-height: 170px;
+}
+
+.search-form {
+  height: 80px;
+
+}
+
+.search-form .invalid-feedback {
+  display: block;
+  color: red;
+  max-width: 130px;
+  margin: 0 auto;
+}
+
+.search-hashtag {
+  width: 100%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+.search-count {
+  width: 15%;
+  min-width: 150px;
+  margin: 0 auto;
+}
+
+.search-input, .btn-search,.search-sort-select {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 2px;
+}
+
+.btn-search {
+  margin: 6px;
+}
+
+.search-sort-select {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.search-sort-select label {
+  font-size: 18px;
+}
+
+.search-sort-select select {
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.tweet-result {
+  position: relative;
+  padding: 40px;
+}
+
+twitterwidget {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  min-height: 850px;
+}
+
+.reminder, .no-content {
+  padding: 20px;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+}
