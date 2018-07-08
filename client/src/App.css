@@ -166,19 +166,23 @@ input[type=submit]:hover {
 
 .search-input {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   margin: 5px;
 }
 
 .btn-search {
   display: inline-block;
+  vertical-align: top;
   margin: 6px;
+  margin-top: 9px;
 }
 
 .search-sort-select {
   display: inline-block;
+  vertical-align: top;
   padding: 5px;
-  margin: 10px;
+  margin: 9px;
 }
 
 .search-sort-select label {

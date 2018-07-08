@@ -20,7 +20,6 @@ router.post("/search", (req, res) => {
   twitterClient
     .get("/search/tweets.json", { q: query, count })
     .then(data => {
-      console.log(data.statuses);
       // Deal with incoming data
       const resData = data.statuses.map(item => {
         let favorite_count;
