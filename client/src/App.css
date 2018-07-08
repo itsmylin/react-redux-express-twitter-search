@@ -21,6 +21,8 @@ footer {
   margin: 0 auto; 
   font-size: 30px;
   width:90%;
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 360px) {
@@ -193,7 +195,7 @@ input[type=submit]:hover {
 
 .tweet-result {
   position: relative;
-  padding: 40px;
+  padding: 20px;
 }
 
 twitterwidget {

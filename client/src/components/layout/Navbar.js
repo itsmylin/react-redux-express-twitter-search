@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     return (
       <div className="app-navbar">
-        <div className="title">Tweet Hashtag Search</div>
+        <Link exact="true" to="/" className="title">
+          Tweet Hashtag Search
+        </Link>
       </div>
     );
   }
