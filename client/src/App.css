@@ -9,8 +9,9 @@ footer {
 .app-navbar {
   background-color: #1DA1F2;
   color: white;
-  height: 60px;
+  height: 70px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .app-navbar .title {
@@ -18,13 +19,18 @@ footer {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto; 
-  line-height: 30px;
   font-size: 30px;
-  margin: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width:90%;
 }
 
+@media screen and (max-width: 360px) {
+  .app-navbar  {
+    height: 60px;
+  }
+  .app-navbar .title{
+    font-size: 22px;
+  }
+}
 img {
   width: 100%;
 }
@@ -63,7 +69,7 @@ input[type=submit]:hover {
   text-align: center;
   position: relative;
   z-index: 1;
-  padding: 90px;
+  padding: 20px;
   margin: 0 auto; 
   height: 100vh;
 }
@@ -86,7 +92,8 @@ input[type=submit]:hover {
   margin-top: 50px;
   height: 300px;
   margin: 0 auto;
-  width: 75%;
+  width: 100%;
+  padding: 10px;
 }
 
 .submit-container {
@@ -109,7 +116,7 @@ input[type=submit]:hover {
 }
 .landing-count {
   width: 12%;
-  min-width: 130px;
+  min-width: 150px;
   margin: 0 auto;
 }
 
@@ -136,10 +143,6 @@ input[type=submit]:hover {
   min-height: 170px;
 }
 
-.search-form {
-  height: 80px;
-
-}
 
 .search-form .invalid-feedback {
   display: block;
@@ -150,29 +153,30 @@ input[type=submit]:hover {
 
 .search-hashtag {
   width: 100%;
-  min-width: 500px;
-  margin: 0 auto;
+  min-width: 300px;
+  margin-right: 10px;
 }
 .search-count {
-  width: 15%;
+  width: 10%;
   min-width: 150px;
   margin: 0 auto;
 }
 
-.search-input, .btn-search,.search-sort-select {
+.search-input {
   display: inline-block;
-  vertical-align: top;
   position: relative;
-  margin: 2px;
+  margin: 5px;
 }
 
 .btn-search {
+  display: inline-block;
   margin: 6px;
 }
 
 .search-sort-select {
-    padding: 5px;
-    margin-left: 10px;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
 }
 
 .search-sort-select label {
@@ -209,4 +213,14 @@ twitterwidget {
   width: 100%;
   margin: 0 auto;
   font-size: 30px;
+}
+
+.search-info {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search-form {
+  display: inline;
 }

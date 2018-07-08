@@ -20,20 +20,5 @@
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:5000",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^1.0.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^3.2.0",
-    "optimize-css-assets-webpack-plugin": "^4.0.3",
-    "postcss-loader": "^2.1.5",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
-  }
+  "devDependencies": {}
 }

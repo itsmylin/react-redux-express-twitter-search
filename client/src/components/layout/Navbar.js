@@ -4,7 +4,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="app-navbar">
-        <div className="title">Tweet Hashtag Search Tool</div>
+        <div className="title">Tweet Hashtag Search</div>
       </div>
     );
   }

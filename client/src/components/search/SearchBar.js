@@ -96,7 +96,7 @@ class SearchBar extends Component {
             </select>
           </div>
         </form>
-        {content}
+        <div className="search-info">{content}</div>
       </div>
     );
   }

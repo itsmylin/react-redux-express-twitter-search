@@ -22,10 +22,8 @@ class TweetResult extends Component {
     }
     return (
       <div className="container">
-        <div className="result-container">
-          <SearchBar />
-          <div className="tweet-result">{content}</div>
-        </div>
+        <SearchBar />
+        <div className="tweet-result">{content}</div>
       </div>
     );
   }
