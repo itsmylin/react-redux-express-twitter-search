@@ -1,6 +1,6 @@
-# react-redux-express-twitter Web application
+# react-redux-express-twitter web application
 
-This demo works well in Google Chrome Version 67.0.3396.99.
+This [demo](https://twitter-search-tool.herokuapp.com/) works well in Google Chrome Version 67.0.3396.99.
 
 TODO:
 Solve the issue in other browsers for rendering Embedded Tweets.
