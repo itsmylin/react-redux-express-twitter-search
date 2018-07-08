@@ -20,18 +20,27 @@ router.post("/search", (req, res) => {
   twitterClient
     .get("/search/tweets.json", { q: query, count })
     .then(data => {
+      console.log(data.statuses);
       // Deal with incoming data
       const resData = data.statuses.map(item => {
-        let favorite_count = item.hasOwnProperty("retweeted_status")
-          ? item.retweeted_status.favorite_count
-          : item.favorite_count;
+        let favorite_count;
+        let created_at;
+        let retweet_count;
+        if (item.hasOwnProperty("retweeted_status")) {
+          favorite_count = item.retweeted_status.favorite_count;
+          created_at = item.retweeted_status.created_at;
+          retweet_count = item.retweeted_status.retweet_count;
+        } else {
+          favorite_count = item.favorite_count;
+          created_at = item.created_at;
+          retweet_count = item.retweet_count;
+        }
         return {
           _id: item.id,
-          user: item.user.screen_name,
           id_str: item.id_str,
-          retweet_count: item.retweet_count,
+          retweet_count,
           favorite_count,
-          created_at: item.created_at
+          created_at
         };
       });
       res.json(resData);

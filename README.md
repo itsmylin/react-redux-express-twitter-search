@@ -18,6 +18,7 @@ Prepare for the config file for development.
 ```bash
 cd config
 touch server.config.development.js
+cd ../
 ```
 
 Add your development credientials in server.config.development.js file.

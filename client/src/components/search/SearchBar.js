@@ -58,7 +58,7 @@ class SearchBar extends Component {
       content = (
         <h1>
           Search result for Hashtags:{" "}
-          {this.state.hashtags.split(" ").map(item => "#" + item)}
+          {this.props.search.query.hashtags.split(" ").map(item => `#${item} `)}
         </h1>
       );
     }
