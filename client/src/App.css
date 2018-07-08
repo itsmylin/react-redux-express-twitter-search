@@ -203,6 +203,16 @@ twitterwidget {
   margin: 0 auto;
 }
 
+.tweet-result {
+ padding: 20px;
+}
+
+.tweet {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
 .container {
   text-align: center;
   padding: 10px;

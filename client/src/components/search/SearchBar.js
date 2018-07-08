@@ -84,7 +84,7 @@ class SearchBar extends Component {
             onChange={this.onChange}
             error={errors.count}
           />
-          <input type="submit" className="btn-search" />
+          <input type="submit" className="btn-search" value="Submit" />
           <div className="search-sort-select">
             <label htmlFor="sort">Sort By: </label>
             <select name="sort" onChange={this.onSortChange}>
